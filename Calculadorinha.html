@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 25px;
+            background-color: rgb(252, 252, 252);
+        }
+        h1 {
+            color: #d80d0d;
+        }
+        p {
+            font-size: 15px;
+            color: #0a0fa8;
+        }
+    </style>
+</head>
+<body>
+    <script>
+    var num1 = Number(prompt("Digite o primeiro número:"))
+    var operacao1 = prompt("Oque quer fazer? + - * /")
+    var num2 = Number(prompt("Digite o segundo número:"))
+    var resultado = 0
+    if (operacao1 === "+") {
+        resultado = num1 + num2
+    } else if (operacao1 === "-") {
+        resultado = num1 - num2
+    } else if (operacao1 === "*") {
+        resultado = num1 * num2
+    } else if (operacao1 === "/") {
+        resultado = num1 / num2
+
+    }
+    alert("O resultado é: " + resultado.toFixed(2));
+    </script>
+</body>
+
+
+</html>
